@@ -1,6 +1,11 @@
 .fb_container{
     box-sizing: border-box;
     clear: both;
+    position: relative;
+}
+#wrap{
+    position: relative;
+    width: 100%;
 }
 #fb_bb{
     border:2px solid red;  
@@ -13,9 +18,11 @@
     color:#fff;
     padding: auto 8px; */
     position: relative;
+    padding-left: 
 }
 .bluebar{
-    /* position:fixed; */
+    position:fixed;
+    z-index: 999;
     display: flex;
     justify-content: space-between; 
     height: 43px;
@@ -84,15 +91,19 @@
     /* position: absolute; */
 }
 #globalContainer{
-    border:4px solid red;
+    /* border:4px solid red; */
     height: 100%;
     position: relative;
+    top:44px;
+    margin: 0 auto;
+}
+.cont_wrap{
+    position: absolute;
 }
 #content{
     min-height: 600px;
-    border:4px solid purple;
+    /* border:4px solid purple; */
     display: inline-block;
-    margin-top: 8px;
 }
 #content .content_wrap{
     display: flex;
@@ -101,22 +112,93 @@
     position: relative;
     clear: both;
     /* float: left; */
+    /* border:2px solid black; */
+}
+._lfb{
+    /* border:2px solid blue; */
+}
+._lfbc{
+    /* border:2px solid red; */
+    height: 16px;
+    padding: 6px;
+}
+.cb_pc{
+    clear: both;
+    width: auto;
+    padding-right: 0;
+}
+.s_lotit{
+    /* display: block; */
+    margin-left: 2px;
+    max-width: 126px;
+    overflow: hidden;
+    padding-left: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    /* font-weight: bold; */
+}
+.lo_news:before{
+    content:'\f2bb';
+    font-family: fontello;
+}
+.lo_message:before{
+    content: '\e800';
+    font-family: fontello;
+}
+.lo_watch:before{
+    content: '\e801';
+    font-family: fontello;
+}
+#user{
+    /* border:2px solid brown; */
+    margin-bottom: 8px;
+}
+#cn_wrap{
+    /* border:2px solid wheat; */
+    clear: both;
+}
+#cn_wrap>*{
+    margin-bottom: 12px;
 }
 #fb_navbar{
     border:4px solid orange;
-    /* position: fixed; */
-    width:inherit;
+    position: relative;
+    /* width:inherit; */
     width:200px;
     height: 365px;
+    margin-top:8px; 
+}
+.navbar_wrap{
+    border:2px solid green;
+    width:180px;
+    margin: 0 auto;
+    position: fixed;
+}
+.navHeader{
+    /* border:2px solid blueviolet; */
+    font-size: 13px;
+    font-weight: bold;
+    color:grey;
+    margin-top:10px;
+    margin-bottom: 6px;
+}
+#group-nav{
+    clear: both;
+    /* border:2px solid seagreen; */
+}
+#round-nav{
+    clear: both;
+    /* border:2px solid aqua; */
 }
 #fb_feed{
-    border:4px solid yellow;
+    /* border:4px solid yellow; */
     display: flex;
     width:500px;
     
 }
 #fb_ad{
-    border:4px solid  green;  
+    /* border:4px solid  green;   */
     width:308px;
     clear: both; 
 }
@@ -131,7 +213,7 @@
 }
 #ad_wrap{
     clear: both;
-    
+
 }
 #ad_wrap .h4{
  border:2px solid black;
