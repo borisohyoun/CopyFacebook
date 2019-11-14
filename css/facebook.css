@@ -2,27 +2,20 @@
     box-sizing: border-box;
     clear: both;
     position: relative;
+    background-color: #e9ebee;
 }
 #wrap{
     position: relative;
     width: 100%;
+    clear: both;
+    display: block;
+}
+#fb_box{
+    min-height: 600px;
+    overflow: hidden;
 }
 #fb_bb{
-    border:2px solid red;  
-    /* display: flex;
-    justify-content: space-between; 
-    height: 43px;
-    width:100%;
-    background-color: #4267b2;
-    border-bottom: 1px solid #29487d;
-    color:#fff;
-    padding: auto 8px; */
-    position: relative;
-    padding-left: 
-}
-.bluebar{
-    position:fixed;
-    z-index: 999;
+    /* border:2px solid red;   */
     display: flex;
     justify-content: space-between; 
     height: 43px;
@@ -31,14 +24,43 @@
     border-bottom: 1px solid #29487d;
     color:#fff;
     padding: auto 8px;
+    position: fixed;
+    z-index: 9999;
+    padding-left: 
+}
+.bluebar{
+    border:2px solid black;
+    justify-content: space-between; 
+    height: 28px;
+    background-color: #4267b2;
+    color:#fff;
+    padding: auto 8px;
+    margin: auto 0;
+    min-width: 100%;
+    width: 1012px !important;
+    overflow: hidden;
+}
+.bb_1{
+    display: flex;
+    border:2px solid black;
+    justify-content: space-between;
+    background-color: #4267b2;
+    color:#fff;
 }
 ._bb-left{
-    border:2px solid orange;
+    /* border:2px solid orange; */
     display: flex;
     flex: 1 1 auto;
 }
-._bb-left .logo {
-
+._bb-left .logo::before{
+    content:'\f30e';
+    font-family: 'fontello';
+}
+._bb-left .logo{
+    font-size: 1.7rem;
+    color:white;
+    margin-left: -2px;
+    margin-right: 5px;
 }
 ._bb-left .serch{
     flex:1 1 auto;
@@ -50,26 +72,25 @@
     box-sizing: border-box;
     height: 26px;
     left: -1px;
-    margin-left: 30px;
     margin-top: 0;
     max-width: 448px;
     overflow: hidden;
-    padding-left: 5px;
     padding-right: 48px;
     position: relative;
     width: auto;
 }
 ._bb-right{
-    border:2px solid yellow;
+    /* border:2px solid yellow; */
     display: flex;
     flex:0 0 auto;
 }
 ._bf3{
-    border:2px solid green;
+    /* border:2px solid green; */
     display: inline-block;
+    position: relative;
 }
 .minbox{
-    border:2px solid blue;
+    /* border:2px solid blue; */
     float: left;
     line-height: 18px;
     background-color: transparent;
@@ -86,9 +107,46 @@
     vertical-align: top;
     white-space: nowrap;
 }
+.bb_bl:before{
+    position: relative;
+    background: rgba(0,0,0,0.1);
+}
+.bb_bl:before{
+        content: '';
+        display: block;
+        height: 18px;
+        left: -1px;
+        position: absolute;
+        top: 5px;
+        width: 1px;
+}
+._add{
+    font-size: 1.2rem;
+    color: #1D3C78;
+    cursor: pointer;
+}
+.add_friend:before{
+    content: '\e802';
+    font-family: fontello;
+}
+.add_message:before{
+    content: '\e800';
+    font-family: fontello;
+}
+.add_notice:before{
+    content: '\f0f3';
+    font-family: fontello;
+}
+.add_help:before{
+    content: '\e803';
+    font-family: fontello;
+}
+.add_more:before{
+    content: '\e804';
+    font-family: fontello;
+}
 .fb_content{
-    background-color: #e9ebee;
-    /* position: absolute; */
+    position: relative;
 }
 #globalContainer{
     /* border:4px solid red; */
@@ -96,14 +154,23 @@
     position: relative;
     top:44px;
     margin: 0 auto;
+    width:1012px !important;
+    padding-right: 205px;
 }
 .cont_wrap{
     position: absolute;
+    width:85%;
+    display: inline-block;
+    border:2px solid black;
 }
 #content{
     min-height: 600px;
-    /* border:4px solid purple; */
+    border:4px solid purple;
+    clear: both;
+    overflow: hidden;
     display: inline-block;
+    margin-top: 15px;
+    /* float:right; */
 }
 #content .content_wrap{
     display: flex;
@@ -164,10 +231,8 @@
 #fb_navbar{
     border:4px solid orange;
     position: relative;
-    /* width:inherit; */
     width:200px;
     height: 365px;
-    margin-top:8px; 
 }
 .navbar_wrap{
     border:2px solid green;
@@ -209,7 +274,6 @@
     border-radius: 1%;
     background-color:#fff;
     width: 300px;
-    height: 544px;
 }
 #ad_wrap{
     clear: both;
@@ -235,4 +299,24 @@ border:2px solid green;
 }
 #ad_card .a_subs{
 border:2px solid blue;
+}
+#ad_feed{
+    border:2px solid red;
+    clear: both;
+    position:relative;
+    margin-top: 10px;
+}
+#ad_feed .lang_cho{
+    border:2px solid green;
+    overflow: hidden;
+}
+.lang_{
+    border: 2px solid orange;
+    color: #4267b2;
+    font-size: 13px;
+}
+#secure{
+    border:2px solid red;
+    position: relative;
+    clear: both;
 }
