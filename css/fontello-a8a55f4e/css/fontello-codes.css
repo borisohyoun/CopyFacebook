@@ -1,0 +1,10 @@
+
+.icon-chat:before { content: '\e800'; } /* '' */
+.icon-desktop:before { content: '\e801'; } /* '' */
+.icon-users:before { content: '\e802'; } /* '' */
+.icon-help-circled:before { content: '\e803'; } /* '' */
+.icon-down-dir:before { content: '\e804'; } /* '' */
+.icon-search:before { content: '\e805'; } /* '' */
+.icon-bell-alt:before { content: '\f0f3'; } /* '' */
+.icon-address-card:before { content: '\f2bb'; } /* '' */
+.icon-facebook-squared:before { content: '\f30e'; } /* '' */

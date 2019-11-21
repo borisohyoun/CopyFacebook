@@ -16,8 +16,7 @@
     min-height: 600px;
 }
 
-#fb_bb {
-    /* border:2px solid red;   */
+#fb_bb { 
     display: flex;
     justify-content: space-between;
     height: 43px;
@@ -25,37 +24,33 @@
     background-color: #4267b2;
     border-bottom: 1px solid #29487d;
     color: #fff;
-    padding: auto 8px;
     position: fixed;
     z-index: 9999;
-    padding-left:
 }
 
 .bluebar {
-    border: 2px solid black;
     justify-content: space-between;
     height: 28px;
     background-color: #4267b2;
     color: #fff;
-    padding: auto 8px;
-    margin: auto 0;
-    min-width: 100;
+    padding-right:205px;
+    margin: auto ;
     width: 1012px !important;
     overflow: hidden;
 }
 
 .bb_1 {
-    display: flex;
-    /* border:2px solid black; */
+    display: inline-flex;
+    width:85%;
     justify-content: space-between;
     background-color: #4267b2;
     color: #fff;
 }
 
 ._bb-left {
-    /* border:2px solid orange; */
     display: flex;
     flex: 1 1 auto;
+    justify-content: flex-start;
 }
 
 ._bb-left .logo::before {
@@ -70,11 +65,7 @@
     margin-right: 5px;
 }
 
-._bb-left .serch {
-    flex: 1 1 auto;
-}
-
-._bb-left .serch .serch_box {
+._bb-left .search {
     background-color: #fff;
     border: 1px solid #3b5998;
     border-radius: 3px;
@@ -87,12 +78,46 @@
     padding-right: 48px;
     position: relative;
     width: auto;
+    flex: 1 1 auto;
 }
-
+#fb_bb .search .magni{
+    background: #f5f6f7;
+    /* border: none; */
+    border-radius: 0 2px 2px 0;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    line-height: 1;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+.icon-search{
+    background-origin: content-box;
+    display: inline-block;
+    margin: -1px;
+    padding: 1px;
+    position: relative;
+    right: 0;
+    vertical-align: middle;
+    color:rgba(0,0,0,0.7);
+    font-size: 0.9rem;
+    margin-top: 3px;
+}
+.icon-search::before{
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+}
 ._bb-right {
     /* border:2px solid yellow; */
     display: flex;
     flex: 0 0 auto;
+    justify-content: flex-end;
+    margin-left: 8px;
 }
 
 ._bf3 {
@@ -184,7 +209,7 @@
     position: absolute;
     width: 85%;
     display: inline-block;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 #content {
@@ -192,7 +217,6 @@
     /* border:4px solid purple; */
     clear: both;
     overflow: hidden;
-    display: inline-block;
     margin-top: 12px;
 }
 
@@ -311,7 +335,7 @@
 
 #fb_ad {
     /* border:4px solid  green;   */
-    width: 308px;
+    /* width: 308px; */
     clear: both;
     overflow: hidden;
 }
@@ -320,8 +344,9 @@
     clear: both;
     padding: 12px;
     border: 1px solid#CCCCCC;
-    border-radius: 1%;
+    border-radius: 3px;
     background-color: #fff;
+    width:308px;
 }
 
 #ad_wrap {
@@ -335,12 +360,12 @@
     display: flex;
     font-size: 13px;
     line-height: 12px;
-    padding-bottom: 12px;
 }
 
 #ad_card {
     /* border: 2px solid red; */
     clear: both;
+    margin-top: 12px;
 }
 
 #ad_card .a_img {
@@ -355,6 +380,7 @@
     font-size: 13px;
     color: #3b5998;
     font-weight: bold;
+    padding-top: 12px;
 }
 
 #ad_card .a_link {
@@ -370,35 +396,40 @@
     color:#616770;
     font-size: 13px;
 }
-
-#ad_feed {
-    /* border: 2px solid red; */
-    clear: both;
-    position: sticky;
-    top: 43px;
-    margin-top: 10px;
+#ad_feed{
+    position:block;
+    margin-top:10px;
+    display: inline-flex;
 }
-@supports (position: sticky) or (position: -webkit-sticky) {
-    #ad_feed {
-        position: -webkit-sticky; /* 사파리 브라우저 지원 */
-        position: sticky;
-        top: 43px;
-    }
-  }
+
 
 #ad_feed .lang_cho {
-    border: 2px solid green;
     overflow: hidden;
 }
 
 .lang_ {
-    border: 2px solid orange;
     color: #4267b2;
     font-size: 13px;
 }
 
 #secure {
-    border: 2px solid red;
     position: relative;
     clear: both;
+}
+.more-lang{
+    border:1px solid rgba(0, 0, 0, 0.1);
+    border-radius:3px;
+    width:34px;
+    height: 24px;
+    display:inline-flex;
+    position: absolute;
+    right:10%;
+    background-color: #e9ebee;
+}
+.more-lang i {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 3px;
+    color: rgba(0, 0, 0, 0.7);
 }
