@@ -1,3 +1,7 @@
+html,body, #fb_box{
+    height: 100%;
+    min-height: 100% !important;
+}
 .fb_container {
     box-sizing: border-box;
     clear: both;
@@ -9,7 +13,8 @@
     position: relative;
     width: 100%;
     clear: both;
-    display: block;
+    /* display: block; */
+    height: 100%;
 }
 
 #fb_box {
@@ -325,7 +330,7 @@
     width: 488px;
     position: relative;
     margin: 0 12px;
-    height: 3000px;
+    height: 100%;
 
 }
 
@@ -346,7 +351,7 @@
     border: 1px solid#CCCCCC;
     border-radius: 3px;
     background-color: #fff;
-    width:308px;
+    width:284px;
 }
 
 #ad_wrap {
@@ -432,4 +437,59 @@
     margin: auto;
     margin-top: 3px;
     color: rgba(0, 0, 0, 0.7);
+}
+#fb_chat{
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    border:2px solid gold;
+}
+.visi-chat{
+    /* border-left:1px solid rgba(0,0,0,0.1); */
+    border:2px solid brown;
+    width: 205px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    margin-right: -32px;
+}
+.ch_zo{
+    border:2px solid blue;
+    clear: both;
+}
+.chat_u{
+    border:2px solid red;
+    height: 32px;
+}
+.ch_ff{
+    border:1px solid rgba(0,0, 0,0.1);
+    box-shadow:-1px -1px 1px rgba(0, 0, 0, 0.1);
+    height: 32px;
+    padding: auto 12px;
+    border-radius: 3px;
+    position: fixed;
+    width: 208px;
+    bottom: 0; 
+    right:30px;
+    background-color: #fff;
+    z-index: 300;
+    display: ;
+}
+.acc_ff{
+    margin: auto;
+    display:block;
+    height: 16px;
+    margin: 8px;
+}
+.per_count{
+    display: inline;
+    font-size: 13px;
+}
+.ff_logo{
+    display: inline;
+    float: right;
+}
+.ff_logo .chat_logo{
+    padding-left: 3px;
+    color: #828282;
 }

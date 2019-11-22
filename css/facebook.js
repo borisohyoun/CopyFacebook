@@ -30,4 +30,16 @@ $(document).ready(function() {
     // }
     
         $("#ad_feed").sticky({topSpacing:43});
+
+        // if($(".cont_wrap").css('width'))
+
+        var curWidth = $("#fb_box").css('width');
+
+        if(parseInt(curWidth)<=1021){
+            $('.ch_zo').css('display','none');
+            $('.ch_ff').css('position','fixed');
+        }else{
+
+        }
+
 })
