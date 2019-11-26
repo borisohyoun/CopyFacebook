@@ -31,15 +31,16 @@ $(document).ready(function() {
     
         $("#ad_feed").sticky({topSpacing:43});
 
-        // if($(".cont_wrap").css('width'))
+        $(window).resize(function(){
+            var curWidth = parseInt($(this).width());
+            // $("#wrapper").text(width);
+            if (curWidth < 1012) {
+                $(".visi-chat").css('display','none');
+                $(".ch_ff").css('right','30px');
+           } else{
+                $(".visi-chat").css('display','block');
+                $(".ch_ff").css('right','0');
+           } 
+        }).resize(); // 로딩되면서 창크기에 맞추기 위해 한 번 부름
 
-        var curWidth = $("#fb_box").css('width');
-
-        if(parseInt(curWidth)<=1021){
-            $('.ch_zo').css('display','none');
-            $('.ch_ff').css('position','fixed');
-        }else{
-
-        }
-
-})
+});

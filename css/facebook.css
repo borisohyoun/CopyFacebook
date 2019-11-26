@@ -85,6 +85,11 @@ html,body, #fb_box{
     width: auto;
     flex: 1 1 auto;
 }
+._bb-left .ser_144{
+    margin-left:0;
+    min-width: 144px;
+    width:100%;
+}
 #fb_bb .search .magni{
     background: #f5f6f7;
     /* border: none; */
@@ -331,7 +336,7 @@ html,body, #fb_box{
     position: relative;
     margin: 0 12px;
     height: 100%;
-
+    z-index: 400;
 }
 
 .feed_card {
@@ -439,17 +444,15 @@ html,body, #fb_box{
     color: rgba(0, 0, 0, 0.7);
 }
 #fb_chat{
-    position: relative;
     overflow: hidden;
     display: inline-flex;
-    border:2px solid gold;
 }
 .visi-chat{
-    /* border-left:1px solid rgba(0,0,0,0.1); */
-    border:2px solid brown;
+    border-left:1px solid rgba(0,0,0,0.1);
     width: 205px;
     position: absolute;
     right: 0;
+    top:0;
     height: 100%;
     margin-right: -32px;
 }
@@ -470,7 +473,7 @@ html,body, #fb_box{
     position: fixed;
     width: 208px;
     bottom: 0; 
-    right:30px;
+    right:0;
     background-color: #fff;
     z-index: 300;
     display: ;
